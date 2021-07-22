@@ -82,8 +82,19 @@ def pos_tagger():
 
     prev_max = 0
     prev_pos = ''
-    
-    file1 = open("WSJ_23.words", 'r')
+
+    while (True):
+        user_ans = input("Would you like to input a file? (yes)\nOr would you like to see the results of an example file? (no): ")
+        if (user_ans == "yes"):
+            user_file = input("Please type the file name: ")
+            break
+        elif (user_ans == "no"):
+            user_file = "WSJ_23.words"
+            break
+        else:
+            print("Please enter 'yes' or 'no'.")
+        
+    file1 = open(user_file, 'r')
     lines = file1.readlines()
     for line in lines:
         line = line.strip()
