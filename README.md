@@ -1,7 +1,7 @@
 # Part-of-Speech-Tagger
-Predicts the part of speech of each word in any text file by learning from a training set (training.pos) with word -> part of speech combinations.
+Assigns a part of speech tag for each word in any text file by learning from a training set (training.pos) with word -> part of speech combinations.
 
-example_file.words is an example text file but the user can run the program and enter any file (with line break delimiters) and get an output, result.pos, with the predicted part of speeches of all words in the file.
+example_file.words is the default text file but the user can enter any file (must have line break delimiters) and get an output (result.pos) with the part of speech tags for every word.
 
 Table of contents for part of speech tags:
 
