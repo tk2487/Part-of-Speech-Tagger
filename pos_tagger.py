@@ -1,3 +1,5 @@
+from os.path import exists
+
 def pos_tagger():
     file = open("training.pos", 'r')
     lines = file.readlines()
@@ -87,7 +89,10 @@ def pos_tagger():
         user_ans = input("Would you like to input a file? (yes)\nOr would you like to see the results of an example file? (no): ")
         if (user_ans == "yes"):
             user_file = input("Please type the file name: ")
-            break
+            if (not exists(user_file)):
+                print("File does not exist.")
+            else:
+                break
         elif (user_ans == "no"):
             user_file = "WSJ_23.words"
             break
