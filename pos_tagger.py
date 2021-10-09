@@ -88,7 +88,7 @@ def pos_tagger():
     while (True):
         user_ans = input("Would you like to input a file? (yes)\nOr would you like to see the results of an example file? (no): ")
         if (user_ans == "yes"):
-            user_file = input("Please type the file name: ")
+            user_file = input("Please enter the file name (including the file extension, i.e. 'filename.txt'): ")
             if (not exists(user_file)):
                 print("File does not exist.")
             else:
