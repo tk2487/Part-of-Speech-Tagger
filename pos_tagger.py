@@ -94,7 +94,7 @@ def pos_tagger():
             else:
                 break
         elif (user_ans == "no"):
-            user_file = "WSJ_23.words"
+            user_file = "example_file.words"
             break
         else:
             print("Please enter 'yes' or 'no'.")
